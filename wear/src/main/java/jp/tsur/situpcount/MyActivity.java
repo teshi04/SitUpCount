@@ -61,11 +61,13 @@ public class MyActivity extends Activity implements SensorEventListener {
             if (acceleration > STATUS_UP) {
                 // 起きた
                 mStatusDown = false;
+                Utils.vibrate(MyActivity.this);
             }
         } else {
             if (acceleration < STATUS_DOWN) {
                 // 寝た
                 mStatusDown = true;
+                Utils.vibrate(MyActivity.this);
             }
         }
     }
