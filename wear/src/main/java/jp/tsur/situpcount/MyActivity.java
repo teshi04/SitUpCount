@@ -14,11 +14,16 @@ import butterknife.InjectView;
 
 public class MyActivity extends Activity implements SensorEventListener {
 
+    private static final int STATUS_UP = 3;
+    private static final int STATUS_DOWN = -7;
+
     @InjectView(R.id.text_view)
     TextView mTextView;
 
     private SensorManager mSensorManager;
     private Sensor mSensor;
+
+    private boolean mStatusDown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +53,18 @@ public class MyActivity extends Activity implements SensorEventListener {
         // Z 軸の加速度
         float acceleration = event.values[2];
         mTextView.setText(String.valueOf((int) acceleration));
+
+        if (mStatusDown) {
+            if (acceleration > STATUS_UP) {
+                // 起きた
+                mStatusDown = false;
+            }
+        } else {
+            if (acceleration < STATUS_DOWN) {
+                // 寝た
+                mStatusDown = true;
+            }
+        }
     }
 
     @Override
