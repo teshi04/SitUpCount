@@ -2,5 +2,7 @@
 <resources>
 
     <string name="app_name">SitUpCount</string>
+    <string name="label_situp_initial_value">0</string>
+    <string name="label_situp_times">times</string>
 
 </resources>
