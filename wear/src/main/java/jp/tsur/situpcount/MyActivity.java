@@ -24,6 +24,7 @@ public class MyActivity extends Activity implements SensorEventListener {
     private SensorManager mSensorManager;
     private Sensor mSensor;
 
+    private int mSitupCount = 0;
     private boolean mStatusDown;
 
     @Override
@@ -55,12 +56,12 @@ public class MyActivity extends Activity implements SensorEventListener {
     public void onSensorChanged(SensorEvent event) {
         // Z 軸の加速度
         float acceleration = event.values[2];
-        mTextView.setText(String.valueOf((int) acceleration));
 
         if (mStatusDown) {
             if (acceleration > STATUS_UP) {
                 // 起きた
                 mStatusDown = false;
+                mTextView.setText(String.valueOf(++mSitupCount));
                 Utils.vibrate(MyActivity.this);
             }
         } else {
