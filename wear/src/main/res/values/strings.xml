@@ -5,4 +5,7 @@
     <string name="label_situp_initial_value">0</string>
     <string name="label_situp_times">times</string>
 
+    <string name="confirmation_animation_success">Success</string>
+    <string name="confirmation_animation_failure">Failure</string>
+
 </resources>

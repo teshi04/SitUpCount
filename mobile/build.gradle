@@ -6,7 +6,7 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "situpcount.tsur.jp.situpcount"
+        applicationId "jp.tsur.situpcount"
         minSdkVersion 18
         targetSdkVersion 20
         versionCode 1

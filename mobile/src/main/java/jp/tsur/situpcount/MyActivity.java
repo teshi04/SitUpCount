@@ -1,4 +1,4 @@
-package situpcount.tsur.jp.situpcount;
+package jp.tsur.situpcount;
 
 import android.app.Activity;
 import android.os.Bundle;

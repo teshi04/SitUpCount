@@ -2,6 +2,7 @@ package jp.tsur.situpcount;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import butterknife.OnClick;
 
 public class MyActivity extends Activity implements SensorEventListener {
 
@@ -76,5 +78,12 @@ public class MyActivity extends Activity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+    }
+
+    @OnClick(R.id.completion_button)
+    void completion() {
+        Intent intent = new Intent(this, MessageService.class);
+        intent.putExtra(MessageService.EXTRA_SITUP_COUNT, String.valueOf(mSitupCount));
+        startService(intent);
     }
 }
