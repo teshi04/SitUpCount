@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context="jp.tsur.situpcount.ResultActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/label_today_count"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/count_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:textSize="120sp"
+        tools:text="12" />
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_share" />
+
+</LinearLayout>

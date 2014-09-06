@@ -4,5 +4,8 @@
     <string name="app_name">SitUpCount</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_result">Result</string>
+    <string name="label_today_count">Today\'s number of times of a sit-up… </string>
+    <string name="label_share">Share</string>
 
 </resources>

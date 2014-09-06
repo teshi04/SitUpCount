@@ -1,6 +1,6 @@
 package jp.tsur.situpcount;
 
-import android.util.Log;
+import android.content.Intent;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.wearable.MessageEvent;
@@ -24,11 +24,12 @@ public class ListenerService extends WearableListenerService {
 
     @Override
     public void onMessageReceived(MessageEvent event) {
-        Log.d("aaa", "onMessageReceived");
-
         if (event.getPath().equals(PATH_SITUP_COUNT)) {
             byte[] data = event.getData();
-            Log.d("aaa", new String(data));
+            Intent intent = new Intent(this, ResultActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.putExtra(ResultActivity.EXTRA_SITUP_COUNT, new String(data));
+            startActivity(intent);
         }
     }
 }

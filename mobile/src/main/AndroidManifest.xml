@@ -26,6 +26,10 @@
                 <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
             </intent-filter>
         </service>
+
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_result"/>
     </application>
 
 </manifest>
