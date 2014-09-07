@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/share_button"
-        android:layout_width="140dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/label_share" />
 
