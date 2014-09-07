@@ -3,7 +3,6 @@
 
     <string name="app_name">腹筋カウント君</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">設定</string>
     <string name="title_activity_result">結果</string>
     <string name="label_today_count">今日の腹筋回数</string>
     <string name="label_share">シェア</string>
