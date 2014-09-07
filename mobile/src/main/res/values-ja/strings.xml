@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">腹筋カウント君</string>
-    <string name="label_guid">Android Wear を腕に着けて腹筋しよう！</string>
+    <string name="app_name">腹筋カウントくん</string>
+    <string name="label_guid">Android Wear でアプリを立ち上げて腹筋しよう！\n\n腹筋するときは手を頭の後ろに回してください。</string>
     <string name="title_activity_result">結果</string>
     <string name="label_today_count">今日の腹筋回数</string>
     <string name="label_share">シェア</string>

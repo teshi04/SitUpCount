@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">腹筋カウント君</string>
+    <string name="app_name">腹筋カウントくん</string>
     <string name="label_situp_initial_value">0</string>
     <string name="label_situp_times">腹筋回数</string>
 
