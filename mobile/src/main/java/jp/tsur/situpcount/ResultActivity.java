@@ -35,7 +35,7 @@ public class ResultActivity extends Activity {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, "腹筋カウントくん で " + mSitupCount + " 回腹筋をしました。");
+        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.text_result1) + mSitupCount + getString(R.string.text_result2));
         startActivity(intent);
     }
 }

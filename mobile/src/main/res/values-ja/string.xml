@@ -7,5 +7,7 @@
     <string name="title_activity_result">結果</string>
     <string name="label_today_count">今日の腹筋回数</string>
     <string name="label_share">シェア</string>
+    <string name="text_result1">"腹筋カウントくん で "</string>
+    <string name="text_result2">" 回腹筋をしました。 #腹筋カウントくん https://play.google.com/store/apps/details?id=jp.tsur.situpcount"</string>
 
 </resources>

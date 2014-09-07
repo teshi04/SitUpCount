@@ -7,5 +7,7 @@
     <string name="title_activity_result">Result</string>
     <string name="label_today_count">Today\'s number of times of a sit-up… </string>
     <string name="label_share">Share</string>
+    <string name="text_result1">"I was "</string>
+    <string name="text_result2">" times sit-up.  #腹筋カウントくん https://play.google.com/store/apps/details?id=jp.tsur.situpcount"</string>
 
 </resources>
