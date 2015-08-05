@@ -4,14 +4,14 @@ apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "22.0.1"
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         applicationId "jp.tsur.situpcount"
         minSdkVersion 20
         targetSdkVersion 21
-        versionCode 2
-        versionName "1.1"
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
     }
     buildTypes {
         release {
@@ -32,6 +32,6 @@ dependencies {
     compile 'com.google.android.support:wearable:1.2.0'
     compile 'com.google.android.gms:play-services-wearable:7.5.0'
 
-    compile "com.jakewharton:butterknife:5.0.1"
-    apt "com.jakewharton:butterknife:5.0.1"
+    compile "com.jakewharton:butterknife:${butterKnifeVersion}"
+    apt "com.jakewharton:butterknife:${butterKnifeVersion}"
 }

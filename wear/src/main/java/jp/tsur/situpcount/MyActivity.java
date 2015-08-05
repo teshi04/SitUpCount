@@ -11,8 +11,8 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import butterknife.OnClick;
 
 public class MyActivity extends Activity implements SensorEventListener {
@@ -20,7 +20,7 @@ public class MyActivity extends Activity implements SensorEventListener {
     private static final int STATUS_UP = 3;
     private static final int STATUS_DOWN = -7;
 
-    @InjectView(R.id.text_view)
+    @Bind(R.id.text_view)
     TextView mTextView;
 
     private SensorManager mSensorManager;
@@ -33,7 +33,7 @@ public class MyActivity extends Activity implements SensorEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
